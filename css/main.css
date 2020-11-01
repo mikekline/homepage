@@ -67,6 +67,9 @@ h1 {
 }
 
 .mainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: url('../assets/moraine1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,10 +79,6 @@ h1 {
   border: 2px solid black;
   opacity: 0.8;
   /* box-shadow: inset 0px 0px 10px 5px black; */
-}
-
-.cardLayout {
-  display: grid;
 }
 
 .card {
@@ -94,73 +93,66 @@ h1 {
 }
 
 .card:active {
-box-shadow: 0px 0px 0px black;
-margin-top: 3px;
-margin-left:  3px;
+  box-shadow: 0px 0px 0px black;
+  margin-top: 3px;
+  margin-left:  3px;
 }
 
 .card:hover {
-background-color: aliceblue;
+  background-color: aliceblue;
 }
 
 .cardTitle, .cardCode {
-text-align: center;
+  text-align: center;
+  font-size: small;
 }
 
 .cardCode  {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .cardCode:hover {
-color: darkred;
+  color: darkred;
 }
 
 .cardImage {
-height: 4rem;
-width: 9rem;
+  height: 4rem;
+  width: 9rem;
+}
+
+.cardLayout {
+  display: grid;
+  grid-template-columns: 15vw 10vw 10vw 15vw;
+  grid-template-rows: 15vh 15vh 15vh 15vh;
 }
 
 .castle {
-position: absolute;
-top: 20vh;
-left:22vw;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  place-self: center;
+  justify-self: end;
 }
 
 .dnd{
-  position: absolute;
-  top: 35vh;
-  left:37vw;
+  grid-column:  4 / 4;
+  grid-row: 1 /  1;
+  place-self: center;
+  justify-self: start;
 }
 
 .search{
-position: absolute;
-top: 50vh;
-left:52vw;
+  grid-column:  1 /  1;
+  grid-row: 4 / 4;
+  place-self: center;
+  justify-self: end;
 }
 
 .unity{
-position: absolute;
-top: 65vh;
-left:67vw;
+  grid-column: 4 / 4;
+  grid-row: 4 / 4;
+  place-self: center;
+  justify-self: start;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
   display: flex;
