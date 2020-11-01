@@ -5,7 +5,7 @@
 	description: a gallery to display my photoshop images
 	*/
 
-var imageSlide = ["images/My890Jframed.jpg", "images/MadnessInTheRockiesframed.jpg", "images/InTimeAndSpaceframed.jpg"]
+var imageSlide = ["../assets/My890Jframed.jpg", "../assets/MadnessInTheRockiesframed.jpg", "../assets/InTimeAndSpaceframed.jpg"]
 var index = 0;
 
 function next() {
