@@ -11,6 +11,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow: hidden;
 }
 
 ul {
@@ -124,6 +125,7 @@ h1 {
   display: grid;
   grid-template-columns: 15vw 10vw 10vw 15vw;
   grid-template-rows: 15vh 15vh 15vh 15vh;
+
 }
 
 .castle {
@@ -131,6 +133,10 @@ h1 {
   grid-row: 1 / 1;
   place-self: center;
   justify-self: end;
+
+  transform: translateX(100vw);
+  animation: slideLeft 1.5s forwards;
+  -webkit-animation: slideLeft 1.5s forwards;
 }
 
 .dnd{
@@ -138,6 +144,10 @@ h1 {
   grid-row: 1 /  1;
   place-self: center;
   justify-self: start;
+
+  transform: translateX(100vw);
+  animation: slideLeft 2s forwards;
+  -webkit-animation: slideLeft 2s forwards;
 }
 
 .search{
@@ -145,6 +155,10 @@ h1 {
   grid-row: 4 / 4;
   place-self: center;
   justify-self: end;
+
+  transform: translateX(100vw);
+  animation: slideLeft 2.5s forwards;
+  -webkit-animation: slideLeft 2.5s forwards;
 }
 
 .unity{
@@ -152,6 +166,25 @@ h1 {
   grid-row: 4 / 4;
   place-self: center;
   justify-self: start;
+
+  transform: translateX(100vw);
+  animation: slideLeft 3s forwards;
+  -webkit-animation: slideLeft 3s forwards;
+}
+
+/* for animation */
+@keyframes slideLeft {
+
+  100% {
+    transform: translateY(0vw);
+  }
+}
+
+@-webkit-keyframes slideLeft {
+
+  100% {
+    transform: translateY(0vw);
+  }
 }
 
 
