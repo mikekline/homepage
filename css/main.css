@@ -201,14 +201,15 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto; 
+  margin: auto;
+   width: 50vw;
 } 
 
 .click {
   margin-top: 1.5vh;
 }
 
-.slide {
+#slide {
   width:50vw;
   box-shadow: 0px 16px 16px 0px black;
 }
