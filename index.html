@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css" />
         <link rel="shortcut icon" href="assets/favicon.ico" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
         <script src="https://kit.fontawesome.com/a2b36221ba.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/javascript.js"></script>
         <title>Homepage</title>
     </head>
     
@@ -17,10 +19,13 @@
                 <header>
                         <img class="logo" src="assets/mountain_logo.png" alt="mountain logo">
                         <h1>Michael Kline</h1>
-                        <div class="menu">
+                        <div id="menu" class="menu">
                             <a class="menuItem" href="#">Home</a>
-                            <a class="menuItem" href="gallery/index.html">Photoshop Gallery</a> 
+                            <a class="menuItem" href="gallery/index.html">Photoshop Gallery</a>       
                         </div> 
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
                 </header>
             </div>
         </div>
@@ -34,8 +39,8 @@
                 <a href="school/the_abandoned_castle/index.html">
                     <div class="card castle">
                         <p class="cardTitle">The Abandoned Castle</p>
-                        <img class="cardImage" src="assets/Screenshot_2020-07-22 The Abandoned Castle.jpg"  alt="image of webpage link">
-                        <a class="cardCode" href="https://github.com/mikekline/The-Abandoned-Castle">Code</a>
+                       <img class="cardImage" src="assets/The_Abandoned_Castle.jpg"  alt="image_of_webpage_link"> 
+      			<a class="cardCode" href="https://github.com/mikekline/The-Abandoned-Castle">Code</a> 
                     </div>
                 </a>
 
@@ -50,14 +55,14 @@
                 <a href="projects/wordsearch/index.html"> 
                     <div class="card search">
                         <p class="cardTitle">Word Search</p>
-                        <img class="cardImage" src="assets/Word Search.jpg"  alt="image of webpage link">
-                        <a class="cardCode" href="https://github.com/mikekline/wordsearch">Code</a>
+                        <img class="cardImage" src="assets/Word_Search.jpg"  alt="image of webpage link">
+                    	<a class="cardCode" href="https://github.com/mikekline/wordsearch">Code</a>
                     </div>
                 </a>
 
                 <a href="https://play.unity.com/u/michael-kline-1">
                     <div class="card unity">
-                        <p class="cardTitle">Unity Tutorials</p>
+                        <p class="cardTitle">Tutorials from Unity</p>
                         <img class="cardImage" src="assets/toppng.com-game-controller-gamepad-icon-video-games-logo-691x766.png"  alt="image of webpage link">
                         <a class="cardCode" href="https://github.com/mikekline/Learning-Unity">Code</a>
                     </div>

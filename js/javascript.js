@@ -1,10 +1,3 @@
-/*
-	program heading: Photoshop gallery
-	author name: Mike Kline
-	version: 0.5
-	description: a gallery to display my photoshop images
-	*/
-
 var imageSlide = ["../assets/My890Jframed.jpg", "../assets/MadnessInTheRockiesframed.jpg", "../assets/InTimeAndSpaceframed.jpg"]
 var index = 0;
 
@@ -23,3 +16,14 @@ function Previous() {
     defaultImg.src = imageSlide[index];
   }
 }
+
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 

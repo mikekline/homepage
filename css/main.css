@@ -11,7 +11,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 ul {
@@ -62,6 +62,10 @@ h1 {
     font-size: 2vw;
 }
 
+.icon {
+  display:none;
+}
+
 .menu {
   flex-grow: 1;
 }
@@ -79,13 +83,15 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../assets/moraine1.jpg');
+  position: relative;
+  /* z-index: -2; */ /* can not use z-index with "a" links */
+  background-image: url('../assets/moraine1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height:50vh;
   width:50vw; 
   margin: auto; 
-  border: 2px solid black;
+  border: 1px solid black;
   opacity: 0.8;
   /* box-shadow: inset 0px 0px 10px 5px black; */
 }
@@ -133,7 +139,6 @@ h1 {
   display: grid;
   grid-template-columns: 15vw 10vw 10vw 15vw;
   grid-template-rows: 15vh 15vh 15vh 15vh;
-
 }
 
 .castle {
@@ -202,7 +207,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   margin: auto;
-   width: 50vw;
 } 
 
 .click {
@@ -296,4 +300,95 @@ i:hover {
     width: 14vw;
     margin-top: 8vh;
   }
+}
+
+@media screen and (max-width: 800px) {
+ 
+  .logo {
+    position: absolute;
+    width: 18vw;
+    margin-top:.5vh;
+    opacity: .3;
+    z-index: -2;
+    margin-left: 2vw;
+  }
+  
+  h1 {
+      flex-grow: 6;
+      margin-top: 6vh;
+      margin-left: 4vw;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 5vw;
+  }
+ 
+  header {
+   clip-path: polygon(0 0, 100% 0, 100% 70%, 20% 70%, 18% 70%, 0 70%); 
+  }
+
+  .icon {
+    display: block;
+    margin-right: 20px;
+    color:black;
+  }
+
+.icon:visited {
+color:black;
+}
+  .menu {
+    display: none;
+  }
+
+  .menu a{
+    display: flex;
+    flex-direction: column;
+  }
+
+ .mainPage {
+    height:60vh;
+    width:80vw; 
+    margin-top: 2vh;
+    background-image: none;
+    border: 0px solid black;
+ }
+
+ .castle, .dnd, .search, .unity {
+  transform: translateY(0vw);
+ }
+
+ .cardLayout {
+  /* display: flex;
+  flex-direction: column;
+  align-content: space-around; */
+  grid-template-columns: 15vw 1vw 1vw 15vw;
+  grid-template-rows: 2vh 10vh 10vh 15vh;
+ }
+
+.gallery {
+  margin-top: 1.4vh;
+}
+
+#slide {
+ width:90vw;
+}
+
+
+.thumbnail {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+ footer li {
+  font-size: 7px;
+  width: 200px;
+}
+  
+.footerIcon {
+  width: 2rem;
+  font-size: .7rem;
+}
+
+
+
+
 }
