@@ -11,7 +11,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 ul {
@@ -84,7 +84,6 @@ h1 {
   justify-content: center;
   align-items: center;
   position: relative;
-  /* z-index: -2; */ /* can not use z-index with "a" links */
   background-image: url('../assets/moraine1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -93,7 +92,6 @@ h1 {
   margin: auto; 
   border: 1px solid black;
   opacity: 0.8;
-  /* box-shadow: inset 0px 0px 10px 5px black; */
 }
 
 .card {
@@ -168,7 +166,6 @@ h1 {
   grid-row: 4 / 4;
   place-self: center;
   justify-self: end;
-
   transform: translateX(100vw);
   animation: slideLeft 2.5s forwards;
   -webkit-animation: slideLeft 2.5s forwards;
@@ -332,9 +329,9 @@ i:hover {
     color:black;
   }
 
-.icon:visited {
-color:black;
-}
+  .icon:visited {
+    color:black;
+  }
   .menu {
     display: none;
   }
@@ -344,51 +341,45 @@ color:black;
     flex-direction: column;
   }
 
- .mainPage {
+  .mainPage {
     height:60vh;
     width:80vw; 
     margin-top: 2vh;
     background-image: none;
     border: 0px solid black;
- }
+  }
 
- .castle, .dnd, .search, .unity {
-  transform: translateY(0vw);
- }
+  .castle, .dnd, .search, .unity {
+    transform: translateY(0vw);
+  }
 
- .cardLayout {
-  /* display: flex;
-  flex-direction: column;
-  align-content: space-around; */
-  grid-template-columns: 15vw 1vw 1vw 15vw;
-  grid-template-rows: 2vh 10vh 10vh 15vh;
- }
+  .cardLayout {
+    grid-template-columns: 15vw 1vw 1vw 15vw;
+    grid-template-rows: 2vh 10vh 10vh 15vh;
+  }
 
-.gallery {
-  margin-top: 1.4vh;
-}
+  .gallery {
+    margin-top: 1.4vh;
+  }
 
-#slide {
- width:90vw;
-}
+  #slide {
+    width:90vw;
+  }
 
 
-.thumbnail {
-  width: 30px;
-  margin-bottom: 10px;
-}
+  .thumbnail {
+    width: 30px;
+    margin-bottom: 10px;
+  }
 
- footer li {
-  font-size: 7px;
-  width: 200px;
-}
+  footer li {
+    font-size: 7px;
+    width: 200px;
+  }
   
-.footerIcon {
-  width: 2rem;
-  font-size: .7rem;
-}
-
-
-
+  .footerIcon {
+    width: 2rem;
+    font-size: .7rem;
+  }
 
 }
